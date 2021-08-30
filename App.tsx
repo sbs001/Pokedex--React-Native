@@ -1,11 +1,13 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import { Text, View } from 'react-native';
+import Navigator from './src/navigator/StackNavigator';
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
   return (
-    <View>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+   <NavigationContainer>
+     <Navigator />
+   </NavigationContainer>
   );
 }
 
