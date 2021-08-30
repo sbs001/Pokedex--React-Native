@@ -1,12 +1,14 @@
 import React from "react";
 import { Image, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { usePokemonPagination } from "../../hooks/usePokemonPagination";
 import { style } from "./HomeScreenStyles";
 
 
 export default function HomeScreen() {
 
   const { top } = useSafeAreaInsets();
+  usePokemonPagination();
 
   return (
     <View style={style.home}>
