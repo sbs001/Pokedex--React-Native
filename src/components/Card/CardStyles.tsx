@@ -4,7 +4,6 @@ export const CardStyle = StyleSheet.create({
 
   ctn: {
     marginHorizontal: 10,
-    backgroundColor: 'grey',
     height: 120,
     marginBottom: 25,
     borderRadius: 10,

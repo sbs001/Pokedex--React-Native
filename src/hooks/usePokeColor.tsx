@@ -6,7 +6,7 @@ import { PokemonComplete } from "../interfaces/PokeCompleteInterface";
 
 export const usePokeColor = (id: string) => {
 
-  const [pokeColor, setPokeColor] = useState('grey');
+  const [pokeColor, setPokeColor] = useState('gray');
 
   const setColor = (type: string) => {
     switch (type) {
