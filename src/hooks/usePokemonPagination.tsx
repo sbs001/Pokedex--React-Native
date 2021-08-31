@@ -16,7 +16,7 @@ export const usePokemonPagination = () => {
   const mapPokemonList = (pokemons: Result[]):SimplePokemon[] => {
 
     return pokemons.map(({ name, url }) => {
-      const id = url.split('/')[url.length - 2];
+      const id = url.split('/')[6];
       return {
         name,
         id,

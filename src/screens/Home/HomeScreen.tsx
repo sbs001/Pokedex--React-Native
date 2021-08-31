@@ -20,7 +20,7 @@ export default function HomeScreen() {
       <FlatList
         data={pokemonList}
         keyExtractor={(pokemon) => pokemon.id}
-        renderItem={({ item }) => <Text>{item.name}</Text>}
+        renderItem={({ item }) => <Image source={{ uri: item.img }} style={{ width: 100, height: 100 }} />}
         onEndReached={loadPokemon}
         onEndReachedThreshold={0.4}
         ListFooterComponent={(<ActivityIndicator style={{ height: 120 }} size={50} color="grey" />)}
