@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dimensions, Image, Text } from 'react-native'
+import { ActivityIndicator, Dimensions, Image, Text } from 'react-native'
 import { TouchableOpacity, View } from 'react-native'
 import { usePokeColor } from '../../hooks/usePokeColor'
 import { SimplePokemon } from '../../interfaces/PokeInterface'
@@ -19,9 +19,10 @@ export default function Card({ pokemon }: Props) {
 
   const { pokeColor } = usePokeColor(pokemon.id);
 
+  if (!pokeColor) return <ActivityIndicator size={30} color={'gray'} style={{ margin: 80 }} />
   return (
-    <TouchableOpacity activeOpacity={0.7}>
-      <View style={{ ...CardStyle.ctn, width, backgroundColor: pokeColor }}>
+    <TouchableOpacity activeOpacity={0.7} style={{ ...CardStyle.ctn, width, backgroundColor: pokeColor }}>
+      <View style={{ flex: 1 }} >
 
         <View>
           <Text style={CardStyle.name}>{pokemon.name + '\n#' + pokemon.id}</Text>
