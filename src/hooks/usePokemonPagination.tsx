@@ -41,7 +41,8 @@ export const usePokemonPagination = () => {
 
   return {
     pokemonList,
-    loading
+    loading,
+    loadPokemon
   }
 
 }
