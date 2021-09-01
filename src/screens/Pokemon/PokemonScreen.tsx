@@ -42,7 +42,7 @@ export default function PokemonScreen({ navigation, route }: Props) {
       {loading
         ?
         <ActivityIndicator style={{ flex: 1 }} size={60} color={route.params.color} />
-        : <PokemonDetail pokemon={pokemon} />}
+        : <PokemonDetail pokemon={pokemon} color={route.params.color}/>}
 
     </View>
   )
