@@ -33,6 +33,7 @@ export const DetailStyle = StyleSheet.create({
     width: 70,
     height: 70,
     alignSelf: 'center',
-    marginVertical: 20
+    marginTop: 30,
+    marginBottom: 60,
   }
 })
