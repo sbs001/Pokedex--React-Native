@@ -4,7 +4,7 @@ import { pokeApi } from "../api/pokeApi";
 import { PokemonsPag, Result, SimplePokemon } from "../interfaces/PokeInterface";
 
 
-export const usePokemonPagination = () => {
+export const usePokemonSearch = () => {
 
 
   const [pokemonList, setPokemonList] = useState<SimplePokemon[]>([]);
