@@ -58,10 +58,22 @@ export default function PokemonDetail({ pokemon, color }: Props) {
           {pokemon.moves.map(({ move }) =>
             <Text key={move.name} style={{ ...DetailStyle.text, width: '50%' }}>
               <Ionicons name="send"></Ionicons>
-              {move.name}
+              {` ${move.name}`}
+            </Text>)}
+        </View>
+
+        <Text style={DetailStyle.title}>Stats</Text>
+        <View style={DetailStyle.moves}>
+          {pokemon.stats.map((stat) =>
+            <Text key={stat.stat.name} style={{ fontSize:15, width: '50%' }}>
+              <Ionicons name="checkmark-circle"></Ionicons>
+              {` ${stat.stat.name} » ${stat.base_stat}`} 
             </Text>)}
         </View>
       </View>
+
+      <FadeInImage uri={pokemon.sprites.front_default} style={DetailStyle.final} />
+
     </ScrollView>
   )
 }
