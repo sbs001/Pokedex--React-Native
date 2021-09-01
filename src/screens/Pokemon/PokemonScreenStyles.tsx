@@ -23,8 +23,8 @@ export const Styles = StyleSheet.create({
   },
 
   pokeball:{
-    width:250,
-    height:250,
+    width:240,
+    height:240,
     bottom:-40,
     opacity:0.7,
   },
