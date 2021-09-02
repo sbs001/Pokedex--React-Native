@@ -7,14 +7,18 @@ import { useState } from "react";
 import { useDebounceValue } from "../../hooks/useDebounceValue";
 import { useEffect } from "react";
 
-export default function SearchBar() {
+interface Props {
+  onChange: (value: string) => void
+};
+
+export default function SearchBar({ onChange }: Props) {
 
   const [input, setInput] = useState('')
 
   const debounceValue = useDebounceValue(input);
 
   useEffect(() => {
-    console.log(debounceValue)
+    onChange(debounceValue)
   }, [debounceValue]);
 
   return (
