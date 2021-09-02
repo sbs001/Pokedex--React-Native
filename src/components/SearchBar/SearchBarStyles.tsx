@@ -3,8 +3,8 @@ import { StyleSheet } from "react-native";
 export const SearchBarStye = StyleSheet.create({
 
   inputCtn: {
-    backgroundColor: '#f3f1f2'
-    ,
+    
+    backgroundColor: '#f3f1f2',
     height: 50,
     borderRadius: 50,
     flexDirection: 'row',
@@ -30,6 +30,7 @@ export const SearchBarStye = StyleSheet.create({
   ctn: {
     marginTop: 30,
     position: 'absolute',
-    width: '100%'
+    width: '100%',
+    zIndex: 99
   }
 })
