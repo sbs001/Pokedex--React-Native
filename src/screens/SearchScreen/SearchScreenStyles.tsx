@@ -5,6 +5,7 @@ export const SearcScreenStyles = StyleSheet.create({
   title: {
     marginVertical: 20,
     fontSize: 30,
-    fontWeight:'bold',
+    fontWeight: 'bold',
+    marginTop: 100,
   }
 })

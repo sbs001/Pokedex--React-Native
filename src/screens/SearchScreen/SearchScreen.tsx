@@ -12,21 +12,21 @@ export default function SearchScreen() {
 
   const { loading, pokemonList } = usePokemonSearch();
 
-  if (loading) return <ActivityIndicator size={60} style={{flex:1}} color={'grey'} />
-  
+  if (loading) return <ActivityIndicator size={60} style={{ flex: 1 }} color={'grey'} />
+
   return (
     <View style={{ flex: 1, marginTop, marginHorizontal: 20 }}>
 
       <SearchBar />
 
       <FlatList
-            data={pokemonList}
-            keyExtractor={(pokemon) => pokemon.id}
-            renderItem={({ item }) => <Card pokemon={item} />}
-            showsVerticalScrollIndicator={false}
-            numColumns={2}
-            ListHeaderComponent={<Text style={SearcScreenStyles.title}>Results of: </Text>}
-          />
+        data={pokemonList}
+        keyExtractor={(pokemon) => pokemon.id}
+        renderItem={({ item }) => <Card pokemon={item} />}
+        showsVerticalScrollIndicator={false}
+        numColumns={2}
+        ListHeaderComponent={<Text style={SearcScreenStyles.title}>Results of: </Text>}
+      />
     </View>
   )
 }

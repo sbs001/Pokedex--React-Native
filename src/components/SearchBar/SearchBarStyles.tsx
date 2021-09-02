@@ -28,6 +28,8 @@ export const SearchBarStye = StyleSheet.create({
   },
 
   ctn: {
-    marginTop: 30
+    marginTop: 30,
+    position: 'absolute',
+    width: '100%'
   }
 })
