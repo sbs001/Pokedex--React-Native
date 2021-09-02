@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import SearchScreen from '../screens/SearchScreen/SearchScreen';
 import Navigator from './StackNavigator';
 import { Ionicons } from '@expo/vector-icons'
+import SeacrhStack from './SearchStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -32,8 +33,8 @@ export default function BottomTab() {
         }}
       />
       <Tab.Screen
-        name="SearchScreen"
-        component={SearchScreen}
+        name="SeacrhStack"
+        component={SeacrhStack}
         options={{
           tabBarLabel: 'Search',
           tabBarIcon: ({ color }) => <Ionicons color={color} size={25} name={'search-outline'} />
