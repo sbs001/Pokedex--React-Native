@@ -1,8 +1,8 @@
-import { HeaderShownContext } from '@react-navigation/elements';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import { SimplePokemon } from '../interfaces/PokeInterface';
 import HomeScreen from '../screens/Home/HomeScreen';
+import InicialScreen from '../screens/InicialScreen';
 import PokemonScreen from '../screens/Pokemon/PokemonScreen';
 
 const Stack = createStackNavigator();

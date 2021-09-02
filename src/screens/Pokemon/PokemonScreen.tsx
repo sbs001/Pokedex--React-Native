@@ -1,7 +1,7 @@
 import { StackScreenProps } from "@react-navigation/stack";
 import React from "react";
 import { Text, View, TouchableOpacity, Image, ActivityIndicator } from "react-native";
-import { RootStackParams } from "../../navigator/StackNavigator";
+import { RootStackParams } from "../../navigator/HomeStack";
 import { Styles } from "./PokemonScreenStyles";
 import { Ionicons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from "react-native-safe-area-context";
