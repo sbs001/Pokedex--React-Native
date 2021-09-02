@@ -38,7 +38,6 @@ export const usePokemonSearch = () => {
   return {
     pokemonList,
     loading,
-    loadPokemon
   }
 
 }
